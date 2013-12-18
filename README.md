@@ -9,9 +9,9 @@ Start to control which paragraph one should start with
 
 I wrote it mostly so I could easily insert an image or other content in between two paragraphs. So, the example code below outputs the first paragraph, then displays an image, and then outputs the rest of the paragraphs.
 
-{exp:paragraph_limiter limit="1"}{entry_description}{/exp:paragraph_limiter}
-<img src="{entry_image}" />
-{exp:paragraph_limiter start="2" }{entry_description}{/exp:paragraph_limiter}
+    {exp:paragraph_limiter limit="1"}{entry_description}{/exp:paragraph_limiter}
+    <img src="{entry_image}" />
+    {exp:paragraph_limiter start="2" }{entry_description}{/exp:paragraph_limiter}
 
 You can also use the limit parameter in the second example, to show just the second and third paragraph.
 
